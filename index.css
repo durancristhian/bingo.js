@@ -1,0 +1,45 @@
+.board {
+    margin-bottom: 0.5cm;
+    margin-top: 0.5cm;
+}
+
+.boardCell {
+    border-bottom: 0.1cm solid #e0e0e0;
+    border-right: 0.1cm solid #e0e0e0;
+    height: 1.75cm;
+    padding: 0.35rem;
+    width: calc(100% / 9);
+}
+
+.boardCellsContainer {
+    border-left: 0.1cm solid #e0e0e0;
+    border-top: 0.1cm solid #e0e0e0;
+}
+
+.boardHeader {
+    border-left: 0.1cm solid #e0e0e0;
+    border-right: 0.1cm solid #e0e0e0;
+    border-top: 0.1cm solid #e0e0e0;
+    font-size: 0.75cm;
+    letter-spacing: 0.1cm;
+    padding: 0.75rem;
+}
+
+.boardImage {
+    display: block;
+    max-height: 100%;
+}
+
+.boards {
+    width: 960px;
+}
+
+@media print {
+    .board {
+        page-break-inside: avoid;
+    }
+
+    .boards {
+        width: auto;
+    }
+}
