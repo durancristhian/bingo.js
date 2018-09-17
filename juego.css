@@ -17,6 +17,15 @@
     transform: rotateY(0) scale(0.5);
 }
 
+.cell span {
+    border-left: 0.2rem solid transparent;
+    border-top: 0.2rem solid transparent;
+    bottom: 0.5px;
+    position: absolute;
+    right: 0.5px;
+    transition: all 0.5s ease-out;
+}
+
 .cell:hover img {
     opacity: 0.75;
     transform: rotateY(0) scale(0.75);
@@ -25,6 +34,13 @@
 .cell.active img {
     opacity: 1;
     transform: rotateY(1turn) scale(1);
+}
+
+.cell.active span {
+    background-color: white;
+    border-left-color: #e0e0e0;
+    border-top-color: #e0e0e0;
+    color: black;
 }
 
 .cellsContainer {
